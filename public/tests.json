@@ -4,36 +4,36 @@
             "title": "Test #1",
             "content": [
                 {
-                    "question": "Which of these racing franchises would you prefer to play a game from?",
+                    "question": "Question #1?",
                     "answers": [
                         {
-                            "type": "Microsoft",
-                            "content": "Forza"
+                            "type": 0,
+                            "content": "Wrong answer"
                         },
                         {
-                            "type": "Nintendo",
-                            "content": "Mario Kart"
+                            "type": 0,
+                            "content": "Wrong answer"
                         },
                         {
-                            "type": "Sony",
-                            "content": "Gran Turismo"
+                            "type": 1,
+                            "content": "Correct answer"
                         }
                     ]
             },
             {
-                "question": "Which of these games do you think is best?",
+                "question": "Question #2?",
                 "answers": [
                     {
-                        "type": "Microsoft",
-                        "content": "BioShock"
+                        "type": 1,
+                        "content": "Wrong answer"
                     },
                     {
-                        "type": "Nintendo",
-                        "content": "The Legend of Zelda: Ocarina of Time"
+                        "type": 1,
+                        "content": "Correct answer"
                     },
                     {
-                        "type": "Sony",
-                        "content": "Final Fantasy VII"
+                        "type": 0,
+                        "content": "Wrong answer"
                     }
                 ]
             }

@@ -1,0 +1,328 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  height: 100vh;
+}
+
+.lectures.container {
+  background-color: transparent;
+}
+
+.lectures-list {
+  margin-top: 18px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lectures-list table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.lectures-list tbody a:hover {
+  cursor: pointer;
+}
+
+.lectures-list tbody tr {
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid #edeff4;
+  -webkit-box-shadow: 0 0 5px 2px #edeff4;
+          box-shadow: 0 0 5px 2px #edeff4;
+}
+
+.lectures-list tbody tr:last-child {
+  border-bottom: none;
+}
+
+.lectures-list tbody tr:hover {
+  background: #fafafa;
+  -webkit-box-shadow: 10px 10px 5px #edeff4;
+          box-shadow: 10px 10px 5px #edeff4;
+}
+
+.lectures-list tbody tr td {
+  vertical-align: middle;
+  padding: 20px 20px 20px 0;
+  border: none;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 600;
+}
+
+.lectures-list tbody tr td.delete {
+  text-align: right;
+}
+
+.lectures-list tbody tr td:first-child {
+  padding-left: 40px;
+}
+
+.lectures-list tbody tr td span {
+  font-weight: normal;
+  letter-spacing: 0.8px;
+}
+
+.lectures-list tbody tr td.lecture-title {
+  font-size: 16px;
+  line-height: 0.3px;
+  font-weight: 500;
+}
+
+.lectures-list tbody tr td.lecture-status {
+  text-transform: uppercase;
+}
+
+.lectures-list tbody tr td.lecture-status.open {
+  color: #f5a623;
+}
+
+.lectures-list tbody tr td.lecture-status.read {
+  color: #33333a;
+}
+
+.lectures-list tbody tr td.lecture-status.new {
+  color: #43b05c;
+}
+
+.lectures-list tbody tr.open {
+  -webkit-box-shadow: inset 8px 0 0 #f5a623;
+          box-shadow: inset 8px 0 0 #f5a623;
+}
+
+.lectures-list tbody tr.declined {
+  -webkit-box-shadow: inset 8px 0 0 #d0021b;
+          box-shadow: inset 8px 0 0 #d0021b;
+}
+
+.lectures-list tbody tr.read {
+  -webkit-box-shadow: inset 8px 0 0 #33333a;
+          box-shadow: inset 8px 0 0 #33333a;
+}
+
+.lectures-list tbody tr.new {
+  -webkit-box-shadow: inset 8px 0 0 #43b05c;
+          box-shadow: inset 8px 0 0 #43b05c;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.login-wrapper {
+  top: 15%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.login-wrapper .thumbnail {
+  background: #EF3B3A;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 50px 30px;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-wrapper input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+}
+
+.login-wrapper button {
+  outline: 0;
+  background: #EF3B3A;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all .3 ease;
+  transition: all .3 ease;
+  cursor: pointer;
+}
+
+body {
+  background: #ccc;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.msg {
+  height: 12px;
+  color: #d0021b;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+.control-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.control-buttons.back {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 36px;
+}
+
+button.add {
+  color: #43b05c;
+  margin-right: 20px;
+}
+
+button.delete {
+  color: #33333a;
+}
+
+button.read {
+  color: #33333a;
+}
+
+button.back {
+  color: #33333a;
+}
+
+button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.save {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  background-color: #43b05c;
+  border-radius: 3px;
+  height: 30px;
+  margin-top: 10px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+form.lecture {
+  margin-top: 30px;
+  background-color: #FFFFFF;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form.lecture input, form.lecture textarea {
+  font-family: monospace;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+}
+
+form.lecture input {
+  margin-bottom: 30px;
+}
+
+form.lecture textarea {
+  height: 300px;
+}
+
+.lecture-back {
+  color: #33333a;
+  font-size: 60px;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 320px;
+  font-weight: 600;
+  height: 60px;
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

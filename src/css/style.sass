@@ -1,0 +1,232 @@
+
+    
+$black: #33333a
+$yellow: #f5a623
+$red: #d0021b
+$green: #43b05c
+$mint: #50e3c2
+$grey: #edeff4
+$blue: #4099d5
+
+$white: #FFFFFF
+$accent: #EF3B3A
+
+$form-width: 300px
+
+body 
+    width: 100%
+    min-height: 100vh
+#root
+    height: 100vh
+    
+.lectures.container 
+    background-color: transparent
+
+    
+.lectures-list
+    margin-top: 18px
+    width: 100%
+    margin: 0 auto
+    table 
+        width: 100%
+        border-collapse: separate
+        border-spacing: 0 12px
+    tbody
+        a 
+            &:hover 
+                cursor: pointer
+        tr 
+            height: 80px
+            background-color: white
+            border-bottom: 1px solid $grey
+            box-shadow: 0 0 5px 2px $grey
+            &:last-child
+                border-bottom: none
+            &:hover
+                background: darken(white, 2%)
+                box-shadow: 10px 10px 5px $grey
+                //cursor: pointer
+            td 
+                vertical-align: middle
+                padding: 20px 20px 20px 0
+                border: none
+                font-size: 14px
+                line-height: normal
+                font-weight: 600
+                &.delete 
+                    text-align: right
+                &:first-child 
+                    padding-left: 40px
+                span 
+                    font-weight: normal
+                    letter-spacing: 0.8px
+                &.lecture-title 
+                    font-size: 16px
+                    line-height: 0.3px
+                    font-weight: 500
+                &.lecture-status 
+                    text-transform: uppercase 
+                    &.open
+                        color: $yellow 
+                    &.read 
+                        color: $black
+                    &.new 
+                        color: $green
+
+            &.open 
+                box-shadow: inset 8px 0 0 $yellow
+            &.declined
+                box-shadow: inset 8px 0 0 $red
+            &.read
+                box-shadow: inset 8px 0 0 $black
+            &.new 
+                box-shadow: inset 8px 0 0 $green
+
+.wrapper 
+    width: 100%
+    height: 100%
+.center 
+    display: flex 
+    justify-content: center 
+    align-content: center
+.login-wrapper
+    top: 15%
+    align-self: center
+    position: relative
+    z-index: 1
+    background: $white
+    max-width: $form-width
+    margin: 0 auto
+    padding: 30px
+    border-radius: 3px
+    text-align: center
+    .thumbnail
+        background: $accent
+        width: 150px
+        height: 150px
+        margin: 0 auto 30px
+        padding: 50px 30px
+        border-radius: 100%
+        box-sizing: border-box
+        img
+         
+    input
+        outline: 0
+        background: darken($white, 5%)
+        width: 100%
+        border: 0
+        margin: 0 0 15px
+        padding: 15px
+        border-radius: 3px
+        box-sizing: border-box
+        font-size: 14px
+    button
+        outline: 0
+        background: $accent
+        width: 100%
+        border: 0
+        padding: 15px
+        border-radius: 3px
+        color: $white
+        font-size: 14px
+        transition: all .3 ease
+        cursor: pointer
+body
+    background: #ccc
+    font-family: 'Roboto', sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    &:before
+        content: ''
+        position: fixed
+        top: 0
+        left: 0
+        display: block
+        background: rgba($white, .8)
+        width: 100%
+        height: 100%
+
+.msg
+    height: 12px
+    color: $red
+    font-weight: 500
+    font-size: 12px
+.title 
+    text-transform: uppercase 
+    font-size: 18px
+    margin-bottom: 15px 
+    font-weight: 600
+    margin-top: 0
+    letter-spacing: 2px
+
+.control-buttons 
+    display: flex 
+    flex-direction: row-reverse
+    &.back 
+        flex-direction: row
+button 
+    background-color: transparent 
+    border: none
+    font-size: 36px
+    &.add 
+        color: $green
+        margin-right: 20px
+    &.delete 
+        color: $black
+    &.read 
+        color: $black
+    &.back 
+        color: $black
+    &:focus
+        outline: none 
+        cursor: pointer
+    &:hover 
+        cursor: pointer
+    &.save 
+        font-size: 12px 
+        font-weight: 500
+        color: white
+        background-color: $green
+        border-radius: 3px
+        height: 30px
+        margin-top: 10px
+        width: 30%
+        margin: 0 auto
+
+form
+    &.lecture 
+        margin-top: 30px
+        background-color: $white
+        padding: 30px
+        display: flex 
+        flex-direction: column 
+        input, textarea 
+            font-family: monospace
+            flex: 1
+            outline: 0
+            background: darken($white, 5%)
+            width: 100%
+            border: 0
+            margin: 0 0 15px
+            padding: 15px
+            border-radius: 3px
+            box-sizing: border-box
+            font-size: 14px
+        input 
+            margin-bottom: 30px
+        textarea
+            height: 300px
+
+.lecture-back 
+    color: $black 
+    font-size: 60px
+    position: absolute
+    z-index: 10
+    top: 50px
+    left: 320px
+    font-weight: 600
+    height: 60px
+
+.logout
+    &:hover 
+        cursor: pointer

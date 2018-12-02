@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import quizQuestions from './api/quizQuestions';
-import Quiz from './components/Quiz';
-import Result from './components/Result';
-import logo from './svg/logo.svg';
-import './test.css'
+import Quiz from './Quiz';
+import Result from './Result';
+import '../../css/test.css'
 import $ from 'jquery'
 
 class Test extends Component {

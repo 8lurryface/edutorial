@@ -1,11 +1,21 @@
 {
     "lectures": [
         {
+            "id": 1,
             "title": "Title of the lecture",
+            "status": "read",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum eros augue, eget tristique turpis eleifend nec. Cras laoreet, magna vel pharetra pulvinar, justo metus placerat est, quis accumsan mi mi sed massa. Etiam magna nisi, sagittis ac libero quis, elementum sodales lorem. Nam laoreet bibendum elit, at semper sapien sollicitudin eu. Etiam euismod, nulla vel egestas facilisis, elit urna egestas libero, ac venenatis ligula quam eu erat. Phasellus eget dolor dictum, semper tortor et, pulvinar lorem. Quisque quis auctor ex. Nulla viverra congue turpis ut ultricies. Aliquam tellus mauris, blandit in laoreet eu, cursus vel lectus. \n\nFusce eros felis, elementum nec pretium ac, eleifend vel mauris. Integer sed lacus ut metus accumsan aliquam. \n\nVivamus pellentesque, eros quis tempus placerat, mi nulla luctus leo, vitae tristique nisl turpis sed turpis. Aliquam eget dapibus enim, in eleifend eros. Maecenas tellus diam, pretium sit amet dolor sit amet, dapibus volutpat dui. Nulla venenatis massa facilisis ligula viverra tincidunt. Donec id tortor quam. Phasellus nibh enim, gravida nec velit et, fermentum consectetur nunc. Pellentesque eget tempus nulla. Vivamus auctor nec nibh nec rutrum. \n\nFusce sed nulla massa. Curabitur id feugiat nisi, non suscipit dolor. Fusce rutrum sem in felis imperdiet, quis vulputate dui consectetur. Etiam pulvinar tempus odio, id tincidunt turpis tempor non. Praesent id est non lacus condimentum egestas. Praesent efficitur erat sit amet ante ullamcorper, scelerisque interdum neque sollicitudin. Aenean nec nibh eleifend, feugiat nisi sed, volutpat sapien."
         },
         {
+            "id": 2,
             "title": "Another lecture #2",
+            "status": "new",
+            "content": "Blablablablablabla this is content\nWow amazing\n\nI'm impressed"
+        },
+        {
+            "id": 3,
+            "title": "Another lecture number three",
+            "status": "new",
             "content": "Blablablablablabla this is content\nWow amazing\n\nI'm impressed"
         }
     ]

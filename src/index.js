@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Test from './Test';
-import Menu from './components/Menu'
-import Lecture from './components/Lecture'
 import App from './App'
 import * as serviceWorker from './serviceWorker';
 

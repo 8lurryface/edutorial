@@ -1,20 +1,28 @@
 import React, { Component} from 'react';
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
-import {Redirect, withRouter} from 'react-router'
-import Home from './Home'
-import Lectures from './components/Lecture'
-import Test from './Test'
-
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Home from './components/_home/Home'
+import Lecture from './components/_lecture/Lecture'
+import LectureList from './components/_lecture/LectureList'
+import Test from './components/_test/Test'
+import Login from './components/_login/Login'
+import NewLecture from './components/_lecture/NewLecture'
+import {PrivateRoute} from './components/_home/PrivateRoute'
+import './css/style.css'
 
 class Routes extends Component {
+
     render() {
+        console.log(this.props.authed);
         return(
             <Router basename={process.env.PUBLIC_URL}>
-                <React.Fragment>
-                    <Route exact path='/' component={Home} />
-                    <Route path="/lectures" component={Lectures} />
-                    <Route path="/tests" component={Test} />
-                </React.Fragment>
+                    <React.Fragment>
+                        <PrivateRoute authed={this.props.authed} exact path='/' component={Home} />
+                        <Route path='/login' component={Login} />
+                        <Route exact path="/lectures" component={LectureList} />
+                        <Route path='/lectures/read' component={Lecture} />
+                        <Route path='/lectures/add' component={NewLecture} />
+                        <Route path="/tests" component={Test} />
+                    </React.Fragment>
             </Router>
         );
     }

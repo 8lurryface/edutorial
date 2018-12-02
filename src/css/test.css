@@ -13,28 +13,33 @@ code {
     monospace;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;
   padding: 0;
-  background: #eee;
   font-family: sans-serif;
 }
 
 .container {
   position: relative;
-  max-width: 800px;
+  max-width: 60%;
   margin: 0 auto;
   background: #fff;
   border-radius: 3px;
 }
 
+
+
 @media (min-width: 769px) {
   .container {
-    margin: 2.5rem auto;
+    margin: auto;
+    padding-top: 2.5rem;
+  }
+  .lecture-container {
+    margin-top: 2.5rem;
+    padding-top: 0;
+    position: absolute;
+    left: 20%;
   }
 }
 
@@ -115,7 +120,7 @@ body {
 
 .radioCustomButton:checked ~ .radioCustomLabel:before {
   content: '';
-  background: #8bc53f url(./svg/icon-check.svg) no-repeat;
+  background: #8bc53f url('../svg/icon-check.svg') no-repeat;
   background-size: 27px;
   border-color: #8bc53f;
 }
