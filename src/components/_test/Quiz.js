@@ -21,7 +21,7 @@ function Quiz(props) {
 
   return (
     <CSSTransitionGroup
-      className="container"
+      className="container lecture-container"
       component="div"
       transitionName="fade"
       transitionEnterTimeout={800}

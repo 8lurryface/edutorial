@@ -21,6 +21,7 @@ class App extends Component {
                 user: "",
                 login: ""
             })
+           
         }
         this.state={
             authed: false,

@@ -4,6 +4,19 @@ import {UserContext} from '../../assets/UserContext'
 import '../../css/menu2.css'
 
 class Menu extends Component {
+    constructor(props) {
+        super();
+        this.logout = this.logout.bind(this);
+
+    }
+
+    logout() {
+        this.parentLogout();
+        this.props.history.push({
+            pathname: "/"
+        })
+    }
+
     render() {
         return(
             <React.Fragment>

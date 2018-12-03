@@ -30,21 +30,15 @@ class Test extends Component {
   }
 
   getData() {
-    $.ajax({
-      url: "../tests.json",
-      type: 'GET',
-      dataType: 'json',
-      success: function(parsed_json){
-          this.setState({
-              testContent: parsed_json.tests[0],
-              question: parsed_json.tests[0].content[0].question,
-              answerOptions: parsed_json.tests[0].content[0].answers
-          });
-      }.bind(this),
-  });
+    this.setState({
+      counter: 0,
+      testId: this.props.location.state.testNumber,
+      testContent: this.props.location.state.testContent,
+      answerOptions: this.props.location.state.testContent[0].answers
+    })
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.getData();
   }
   shuffleArray(array) {
@@ -70,7 +64,7 @@ class Test extends Component {
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
 
-    if (this.state.questionId < this.state.testContent.content.length) {
+    if (this.state.questionId < this.state.testContent.length) {
       setTimeout(() => this.setNextQuestion(), 300);
     } else {
       setTimeout(() => this.setResults(this.getResults()), 300);
@@ -94,8 +88,8 @@ class Test extends Component {
     this.setState({
       counter: counter,
       questionId: questionId,
-      question: this.state.testContent.content[counter].question,
-      answerOptions: this.state.testContent.content[counter].answers,
+      question: this.state.testContent[counter].question,
+      answerOptions: this.state.testContent[counter].answers,
       answer: ''
     });
   }
@@ -118,13 +112,14 @@ class Test extends Component {
   }
 
   renderQuiz() {
+    console.log(this.state);
     return (
       <Quiz
         answer={this.state.answer}
         answerOptions={this.state.answerOptions}
         questionId={this.state.questionId}
-        question={this.state.question}
-        questionTotal={this.state.testContent.content.length}
+        question={this.state.testContent[0].question}
+        questionTotal={this.state.testContent.length}
         onAnswerSelected={this.handleAnswerSelected}
       />
     );

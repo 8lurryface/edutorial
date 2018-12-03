@@ -5,7 +5,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 function Result(props) {
   return (
     <CSSTransitionGroup
-      className="container result"
+      className="container result lecture-container"
       component="div"
       transitionName="fade"
       transitionEnterTimeout={800}

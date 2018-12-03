@@ -17,7 +17,9 @@ class Home extends Component {
     }
     render() {
         return(
-            <p>Home! {this.state.user}</p>
+            <React.Fragment>
+                <p>Home! {this.state.user}</p>
+            </React.Fragment>
         );
     }
 }

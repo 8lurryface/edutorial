@@ -19,11 +19,11 @@ body
 #root
     height: 100vh
     
-.lectures.container 
+.lectures.container, .tests.container
     background-color: transparent
 
     
-.lectures-list
+.lectures-list, .tests.list
     margin-top: 18px
     width: 100%
     margin: 0 auto
@@ -60,27 +60,31 @@ body
                 span 
                     font-weight: normal
                     letter-spacing: 0.8px
-                &.lecture-title 
+                &.lecture-title, &.test-title
                     font-size: 16px
                     line-height: 0.3px
                     font-weight: 500
-                &.lecture-status 
+                &.lecture-status, &.test-status
                     text-transform: uppercase 
                     &.open
                         color: $yellow 
-                    &.read 
+                    &.new
                         color: $black
-                    &.new 
+                    &.read, &.passed
                         color: $green
+                    &.failed 
+                        color: $red
 
             &.open 
                 box-shadow: inset 8px 0 0 $yellow
             &.declined
                 box-shadow: inset 8px 0 0 $red
-            &.read
-                box-shadow: inset 8px 0 0 $black
-            &.new 
+            &.read, &.passed
                 box-shadow: inset 8px 0 0 $green
+            &.new
+                box-shadow: inset 8px 0 0 $black
+            &.failed 
+                box-shadow: inset 8px 0 0 $red
 
 .wrapper 
     width: 100%
@@ -183,12 +187,12 @@ button
     &:hover 
         cursor: pointer
     &.save 
-        font-size: 12px 
+        font-size: 16px 
         font-weight: 500
         color: white
         background-color: $green
         border-radius: 3px
-        height: 30px
+        height: 50px
         margin-top: 10px
         width: 30%
         margin: 0 auto
@@ -222,7 +226,7 @@ form
     font-size: 60px
     position: absolute
     z-index: 10
-    top: 50px
+    top: 30px
     left: 320px
     font-weight: 600
     height: 60px

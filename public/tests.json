@@ -4,59 +4,60 @@
             "title": "Test #1",
             "content": [
                 {
-                    "question": "Question #1?",
+                    "question": "Which of these seasons is your favorite?",
                     "answers": [
                         {
-                            "type": 0,
-                            "content": "Wrong answer"
+                            "type": "Microsoft",
+                            "content": "Fall"
                         },
                         {
-                            "type": 0,
-                            "content": "Wrong answer"
+                            "type": "Nintendo",
+                            "content": "Summer"
                         },
                         {
-                            "type": 1,
-                            "content": "Correct answer"
+                            "type": "Sony",
+                            "content": "Winter"
                         }
                     ]
             },
             {
-                "question": "Question #2?",
+                "question": "Which of these games do you think is best?",
                 "answers": [
                     {
-                        "type": 1,
-                        "content": "Wrong answer"
+                        "type": "Microsoft",
+                        "content": "Ruiner"
                     },
                     {
-                        "type": 1,
-                        "content": "Correct answer"
+                        "type": "Nintendo",
+                        "content": "Hotline Miami"
                     },
                     {
-                        "type": 0,
-                        "content": "Wrong answer"
+                        "type": "Sony",
+                        "content": "Hotline Miami 2"
                     }
                 ]
             }
-
-        ]
-    },
+    
+            ],
+            "status": "passed"
+        },
     {
         "title": "Test #2",
         "content": [
             {
-                "question": "Which of these racing franchises would you prefer to play a game from?",
+                "question": "Which of these colors is your favorite?",
                 "answers": [
                     {
                         "type": "Microsoft",
-                        "content": "Forza"
+                        "content": "Black"
                     },
                     {
                         "type": "Nintendo",
-                        "content": "Mario Kart"
+                        "content": "Yellow"
                     },
                     {
                         "type": "Sony",
-                        "content": "Gran Turismo"
+                        "content": "Orange"
                     }
                 ]
         },
@@ -65,20 +66,21 @@
             "answers": [
                 {
                     "type": "Microsoft",
-                    "content": "BioShock"
+                    "content": "Ruiner"
                 },
                 {
                     "type": "Nintendo",
-                    "content": "The Legend of Zelda: Ocarina of Time"
+                    "content": "Hotline Miami"
                 },
                 {
                     "type": "Sony",
-                    "content": "Final Fantasy VII"
+                    "content": "Hotline Miami 2"
                 }
             ]
         }
 
-        ]
+        ],
+        "status": "new"
     }
   ]
 }

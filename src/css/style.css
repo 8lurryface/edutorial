@@ -7,27 +7,27 @@ body {
   height: 100vh;
 }
 
-.lectures.container {
+.lectures.container, .tests.container {
   background-color: transparent;
 }
 
-.lectures-list {
+.lectures-list, .tests.list {
   margin-top: 18px;
   width: 100%;
   margin: 0 auto;
 }
 
-.lectures-list table {
+.lectures-list table, .tests.list table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 12px;
 }
 
-.lectures-list tbody a:hover {
+.lectures-list tbody a:hover, .tests.list tbody a:hover {
   cursor: pointer;
 }
 
-.lectures-list tbody tr {
+.lectures-list tbody tr, .tests.list tbody tr {
   height: 80px;
   background-color: white;
   border-bottom: 1px solid #edeff4;
@@ -35,17 +35,17 @@ body {
           box-shadow: 0 0 5px 2px #edeff4;
 }
 
-.lectures-list tbody tr:last-child {
+.lectures-list tbody tr:last-child, .tests.list tbody tr:last-child {
   border-bottom: none;
 }
 
-.lectures-list tbody tr:hover {
+.lectures-list tbody tr:hover, .tests.list tbody tr:hover {
   background: #fafafa;
   -webkit-box-shadow: 10px 10px 5px #edeff4;
           box-shadow: 10px 10px 5px #edeff4;
 }
 
-.lectures-list tbody tr td {
+.lectures-list tbody tr td, .tests.list tbody tr td {
   vertical-align: middle;
   padding: 20px 20px 20px 0;
   border: none;
@@ -54,59 +54,68 @@ body {
   font-weight: 600;
 }
 
-.lectures-list tbody tr td.delete {
+.lectures-list tbody tr td.delete, .tests.list tbody tr td.delete {
   text-align: right;
 }
 
-.lectures-list tbody tr td:first-child {
+.lectures-list tbody tr td:first-child, .tests.list tbody tr td:first-child {
   padding-left: 40px;
 }
 
-.lectures-list tbody tr td span {
+.lectures-list tbody tr td span, .tests.list tbody tr td span {
   font-weight: normal;
   letter-spacing: 0.8px;
 }
 
-.lectures-list tbody tr td.lecture-title {
+.lectures-list tbody tr td.lecture-title, .lectures-list tbody tr td.test-title, .tests.list tbody tr td.lecture-title, .tests.list tbody tr td.test-title {
   font-size: 16px;
   line-height: 0.3px;
   font-weight: 500;
 }
 
-.lectures-list tbody tr td.lecture-status {
+.lectures-list tbody tr td.lecture-status, .lectures-list tbody tr td.test-status, .tests.list tbody tr td.lecture-status, .tests.list tbody tr td.test-status {
   text-transform: uppercase;
 }
 
-.lectures-list tbody tr td.lecture-status.open {
+.lectures-list tbody tr td.lecture-status.open, .lectures-list tbody tr td.test-status.open, .tests.list tbody tr td.lecture-status.open, .tests.list tbody tr td.test-status.open {
   color: #f5a623;
 }
 
-.lectures-list tbody tr td.lecture-status.read {
+.lectures-list tbody tr td.lecture-status.new, .lectures-list tbody tr td.test-status.new, .tests.list tbody tr td.lecture-status.new, .tests.list tbody tr td.test-status.new {
   color: #33333a;
 }
 
-.lectures-list tbody tr td.lecture-status.new {
+.lectures-list tbody tr td.lecture-status.read, .lectures-list tbody tr td.lecture-status.passed, .lectures-list tbody tr td.test-status.read, .lectures-list tbody tr td.test-status.passed, .tests.list tbody tr td.lecture-status.read, .tests.list tbody tr td.lecture-status.passed, .tests.list tbody tr td.test-status.read, .tests.list tbody tr td.test-status.passed {
   color: #43b05c;
 }
 
-.lectures-list tbody tr.open {
+.lectures-list tbody tr td.lecture-status.failed, .lectures-list tbody tr td.test-status.failed, .tests.list tbody tr td.lecture-status.failed, .tests.list tbody tr td.test-status.failed {
+  color: #d0021b;
+}
+
+.lectures-list tbody tr.open, .tests.list tbody tr.open {
   -webkit-box-shadow: inset 8px 0 0 #f5a623;
           box-shadow: inset 8px 0 0 #f5a623;
 }
 
-.lectures-list tbody tr.declined {
+.lectures-list tbody tr.declined, .tests.list tbody tr.declined {
   -webkit-box-shadow: inset 8px 0 0 #d0021b;
           box-shadow: inset 8px 0 0 #d0021b;
 }
 
-.lectures-list tbody tr.read {
+.lectures-list tbody tr.read, .lectures-list tbody tr.passed, .tests.list tbody tr.read, .tests.list tbody tr.passed {
+  -webkit-box-shadow: inset 8px 0 0 #43b05c;
+          box-shadow: inset 8px 0 0 #43b05c;
+}
+
+.lectures-list tbody tr.new, .tests.list tbody tr.new {
   -webkit-box-shadow: inset 8px 0 0 #33333a;
           box-shadow: inset 8px 0 0 #33333a;
 }
 
-.lectures-list tbody tr.new {
-  -webkit-box-shadow: inset 8px 0 0 #43b05c;
-          box-shadow: inset 8px 0 0 #43b05c;
+.lectures-list tbody tr.failed, .tests.list tbody tr.failed {
+  -webkit-box-shadow: inset 8px 0 0 #d0021b;
+          box-shadow: inset 8px 0 0 #d0021b;
 }
 
 .wrapper {
@@ -262,12 +271,12 @@ button:hover {
 }
 
 button.save {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   color: white;
   background-color: #43b05c;
   border-radius: 3px;
-  height: 30px;
+  height: 50px;
   margin-top: 10px;
   width: 30%;
   margin: 0 auto;
@@ -316,7 +325,7 @@ form.lecture textarea {
   font-size: 60px;
   position: absolute;
   z-index: 10;
-  top: 50px;
+  top: 30px;
   left: 320px;
   font-weight: 600;
   height: 60px;
